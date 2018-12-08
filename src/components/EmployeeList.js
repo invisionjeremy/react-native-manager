@@ -18,11 +18,11 @@ class EmployeeList extends Component {
     }
 
     createDataSource({ employees }) {
+        const sortedEmployees = _.orderBy(employees, ['name'], ['asc']);
         const ds = new ListView.DataSource({
             rowHasChanged: (r1, r2) => r1 !== r2
         });
-        this.dataSource = ds.cloneWithRows(employees);
-        console.log(this.dataSource);
+        this.dataSource = ds.cloneWithRows(sortedEmployees);
     } 
 
     renderRow(employee) {
