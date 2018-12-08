@@ -7,4 +7,5 @@ export const EMPLOYEE_CREATE = 'employee_create';
 export const EMPLOYEE_UPDATE = 'employee_update';
 export const EMPLOYEES_FETCH_SUCCESS = 'employee_list_fetched_successfully';
 export const EMPLOYEE_SAVE_SUCCESS = 'employee_saved_successfully';
+export const EMPOYEE_DELETE = 'employee_deleted_successfully';
 
